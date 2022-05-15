@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Project(project) {
+function Project({project}) {
     const {name, repo, deployment} = project;
     return (
         <div>

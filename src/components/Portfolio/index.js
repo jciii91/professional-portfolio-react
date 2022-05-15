@@ -37,7 +37,12 @@ function Portfolio() {
 
     return (
         <section>
-            <Project name = {projectObjects[0].name} repo = {projectObjects[0].repo} deployment = {projectObjects[0].deployment}></Project>
+            {projectObjects.map((project) => (
+                <Project 
+                    project = {project}
+                    key = {project.name}
+                ></Project>
+            ))}
         </section>
     );
 }
