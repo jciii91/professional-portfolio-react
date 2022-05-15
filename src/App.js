@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './components/About';
+import ContactForm from './components/Contact';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 
@@ -10,6 +11,7 @@ function App() {
       <main>
         <About></About>
         <Portfolio></Portfolio>
+        <ContactForm></ContactForm>
       </main>
     </div>
   );
