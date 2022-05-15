@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import About from './components/About';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
@@ -20,6 +21,7 @@ function App() {
         {sectionSelected === 'contact' && (<ContactForm></ContactForm>)}
         {sectionSelected === 'resume' && (<Resume></Resume>)}
       </main>
+      <Footer></Footer>
     </div>
   );
 }
