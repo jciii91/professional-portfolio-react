@@ -37,7 +37,7 @@ function Portfolio() {
 
     return (
         <section>
-            <Project></Project>
+            <Project name = {projectObjects[0].name} repo = {projectObjects[0].repo} deployment = {projectObjects[0].deployment}></Project>
         </section>
     );
 }
