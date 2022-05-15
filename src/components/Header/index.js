@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Navigation'
 
-function Header() {
+function Header({sectionSelected, setSectionSelected}) {
     return (
         <header className="flex-row">
             <h3 className='my-2'>
@@ -9,7 +9,10 @@ function Header() {
                     John Costello
                 </a>
             </h3>
-            <Navigation></Navigation>
+            <Navigation
+                sectionSelected = {sectionSelected}
+                setSectionSelected = {setSectionSelected}
+            ></Navigation>
         </header>
     );
 }
