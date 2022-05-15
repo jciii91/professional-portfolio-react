@@ -14,7 +14,7 @@ function Navigation({sectionSelected, setSectionSelected}) {
                     <a href="#contact" className={`${sectionSelected === 'contact' && 'activeSection'}`} onClick={ () => setSectionSelected('contact') }>Contact</a>
                 </li>
                 <li className="mx-2">
-                    <a href="/">Resume</a>
+                <a href="#resume" className={`${sectionSelected === 'resume' && 'activeSection'}`} onClick={ () => setSectionSelected('resume') }>Resume</a>
                 </li>
             </ul>
         </nav>

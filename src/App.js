@@ -3,6 +3,7 @@ import About from './components/About';
 import ContactForm from './components/Contact';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 
 function App() {
   const [sectionSelected, setSectionSelected] = useState('about');
@@ -17,6 +18,7 @@ function App() {
         {sectionSelected === 'about' && (<About></About>)}
         {sectionSelected === 'portfolio' && (<Portfolio></Portfolio>)}
         {sectionSelected === 'contact' && (<ContactForm></ContactForm>)}
+        {sectionSelected === 'resume' && (<Resume></Resume>)}
       </main>
     </div>
   );
