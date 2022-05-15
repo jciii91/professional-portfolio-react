@@ -6,7 +6,7 @@ main {
 }
 :root {
   --primary: #8c54ff;
-  --secondary: #F3A847;
+  --secondary: #FFFF00;
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #000000;
@@ -290,6 +290,6 @@ a {
 	
 }
 
-.navActive {
+.activeSection {
   color: var(--secondary);
 }
