@@ -29,7 +29,9 @@ function ContactForm() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState);
+        if (!errorMessage && (name && email && message)) {
+            console.log(formState);
+        }
     }
 
     return (
