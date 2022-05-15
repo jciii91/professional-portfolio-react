@@ -3,9 +3,9 @@ import profilePicture from "../../assets/img/profilePhoto.jpg"
 
 function About() {
     return (
-        <div className='aboutMe'>
+        <div id='about-me'>
             <div>
-                <h2>About Me</h2>
+                <h3>About Me</h3>
             </div>
             <div>
                 <img alt='John Costello' src={profilePicture}/>
