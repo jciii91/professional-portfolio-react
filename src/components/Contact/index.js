@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail, capitalizeFirstLetter } from '../../utils/helpers';
 
 function ContactForm() {
     const [errorMessage, setErrorMessage] = useState('');
@@ -12,13 +12,16 @@ function ContactForm() {
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
             } else {
-                if (!e.target.value.length) {
-                    setErrorMessage(`${e.target.name} is required.`);
-                } else {
-                    setErrorMessage('');
-                }
+                setErrorMessage('');
             }
-        }  
+        } else {
+            if (!e.target.value.length) {
+                const currentTarget = capitalizeFirstLetter(e.target.name);
+                setErrorMessage(`${currentTarget} is required.`);
+            } else {
+                setErrorMessage('');
+            }
+        }
         if (!errorMessage) {
             setFormState({ ...formState, [e.target.name]: e.target.value });
         }
@@ -45,6 +48,11 @@ function ContactForm() {
                     <label htmlFor="message">Message:</label>
                     <textarea name="message" rows="5" defaultValue={message} onChange={handleChange}/>
                 </div>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
                 <button type="submit">Submit</button>
             </form>
         </section>
