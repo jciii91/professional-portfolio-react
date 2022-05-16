@@ -37,10 +37,11 @@ function Portfolio() {
 
     return (
         <section>
-            {projectObjects.map((project) => (
+            {projectObjects.map((project, i) => (
                 <Project 
                     project = {project}
                     key = {project.name}
+                    index = {i}
                 ></Project>
             ))}
         </section>

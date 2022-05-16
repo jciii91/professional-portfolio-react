@@ -4,7 +4,7 @@ import Navigation from '../Navigation'
 function Header({sectionSelected, setSectionSelected}) {
     return (
         <header className="flex-row">
-            <h3 className='my-2'>
+            <h3 className='my-2 mx-2'>
                 <a href='/'>
                     John Costello
                 </a>
