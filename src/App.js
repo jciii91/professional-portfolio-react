@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 import About from './components/About';
-import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
@@ -10,19 +11,20 @@ function App() {
   const [sectionSelected, setSectionSelected] = useState('about');
 
   return (
-    <div>
-      <Header
-        sectionSelected = {sectionSelected}
-        setSectionSelected = {setSectionSelected}
-      ></Header>
-      <main>
-        {sectionSelected === 'about' && (<About></About>)}
-        {sectionSelected === 'portfolio' && (<Portfolio></Portfolio>)}
-        {sectionSelected === 'contact' && (<ContactForm></ContactForm>)}
-        {sectionSelected === 'resume' && (<Resume></Resume>)}
-      </main>
-      <Footer></Footer>
-    </div>
+    <Container>
+      <div>
+        <Header
+          sectionSelected = {sectionSelected}
+          setSectionSelected = {setSectionSelected}
+        ></Header>
+        <main>
+          {sectionSelected === 'about' && (<About></About>)}
+          {sectionSelected === 'portfolio' && (<Portfolio></Portfolio>)}
+          {sectionSelected === 'resume' && (<Resume></Resume>)}
+        </main>
+        <Footer></Footer>
+      </div>
+    </Container>
   );
 }
 
