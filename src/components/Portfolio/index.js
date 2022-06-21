@@ -48,11 +48,12 @@ function Portfolio() {
 
     return (
         <Row className='g-4'>
-            {projectObjects.map((project) => (
+            {projectObjects.map((project, index) => (
                 <Col>
                     <Project 
                         project = {project}
                         key = {project.name}
+                        i = {index}
                     ></Project>
                 </Col>
             ))}
