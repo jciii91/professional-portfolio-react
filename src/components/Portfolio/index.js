@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col } from 'react-bootstrap';
 import Project from '../Project';
 
 function Portfolio() {
@@ -36,15 +37,16 @@ function Portfolio() {
     ];
 
     return (
-        <section>
-            {projectObjects.map((project, i) => (
-                <Project 
-                    project = {project}
-                    key = {project.name}
-                    index = {i}
-                ></Project>
+        <Row className='g-4'>
+            {projectObjects.map((project) => (
+                <Col>
+                    <Project 
+                        project = {project}
+                        key = {project.name}
+                    ></Project>
+                </Col>
             ))}
-        </section>
+        </Row>
     );
 }
 export default Portfolio;

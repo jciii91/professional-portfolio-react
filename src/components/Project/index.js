@@ -1,23 +1,20 @@
 import React from 'react';
+import { Card, Button } from 'react-bootstrap';
 
-function Project({project, index}) {
+function Project({project}) {
     const {name, repo, deployment} = project;
-    const classId = 'project' + index;
     return (
-        <section>
-            <img alt='project' className={classId}/>
-            <div className='projectDiv'>
-                <h4>
-                    {name}
-                </h4>
-                <a href={repo} target="_blank" rel="noreferrer">
-                    Repository
-                </a>
-                <a href={deployment} target="_blank" rel="noreferrer">
-                    Deployment
-                </a>
-            </div>
-        </section>
+        <Card style={{ width: '20rem' }}>
+            <Card.Img variant='top' src='' />
+            <Card.Body>
+                <Card.Title>{name}</Card.Title>
+                <Card.Text>
+
+                </Card.Text>
+                <Button variant='primary' href={repo} target='_blank'>Repository</Button>
+                <Button variant='secondary' href={deployment} target='_blank'>Deployment</Button>
+            </Card.Body>
+        </Card>
     );
 }
 
