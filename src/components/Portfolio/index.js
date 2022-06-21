@@ -6,31 +6,41 @@ function Portfolio() {
     const projectObjects = [
         {
             name: 'Budget Tracker',
+            description: '',
+            tech: [],
+            sampleGuest: {},
             repo: 'https://github.com/jciii91/budget-tracker-PWA',
             deployment: 'https://peaceful-falls-53457.herokuapp.com/'
         },
         {
             name: 'Space Launch',
+            description: '',
+            tech: [],
+            sampleGuest: {},
             repo: 'https://github.com/jciii91/space-launch',
             deployment: 'https://jciii91.github.io/space-launch/'
         },
         {
             name: 'Upscale Delivery',
+            description: '',
+            tech: [],
+            sampleGuest: {},
             repo: 'https://github.com/FernandoMoreno1/Project-2',
             deployment: 'https://upscale-delivery.herokuapp.com/'
         },
         {
-            name: 'Tech Blog',
-            repo: 'https://github.com/jciii91/tech-blog',
-            deployment: 'https://hidden-mesa-74421.herokuapp.com/'
-        },
-        {
             name: 'Note Taker',
+            description: '',
+            tech: [],
+            sampleGuest: {},
             repo: 'https://github.com/jciii91/note-taker',
             deployment: 'https://mysterious-spire-35262.herokuapp.com/'
         },
         {
             name: 'Weather Dashboard',
+            description: '',
+            tech: [],
+            sampleGuest: {},
             repo: 'https://github.com/jciii91/weather-dashboard',
             deployment: 'https://jciii91.github.io/weather-dashboard/'
         }
