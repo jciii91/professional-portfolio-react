@@ -1,6 +1,6 @@
 import React from 'react';
 import resume from '../../assets/documents/resume.pdf'
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 function Resume() {
     const skills = [
@@ -23,6 +23,9 @@ function Resume() {
         'Global States',
         'JSON Web Tokens'
     ]
+
+    let windowSize = window.innerWidth;
+
     return (
         <>
             <Row className='text-center mb-4'>
@@ -31,13 +34,26 @@ function Resume() {
             <Row className='text-center mb-4'>
                 <h3>Technical Skills</h3>
             </Row>
-            <Row className='g-2 m-4 justify-content-center'>
-                    {skills.map((skill) => (
-                        <Col xs={3} className='text-center'>
-                            {skill}
-                        </Col>
-                    ))}
-            </Row>
+            {windowSize > 900 && 
+                <Row className='g-2 m-4 justify-content-center'>
+                        {skills.map((skill) => (
+                            <Col xs={3} className='text-center'>
+                                {skill}
+                            </Col>
+                        ))}
+                </Row>
+            }
+            {windowSize <= 900 && 
+                <Row className='m-4 justify-content-center'>
+                    <ListGroup>
+                        {skills.map((skill) => (
+                            <ListGroupItem className='text-center'>
+                                {skill}
+                            </ListGroupItem>
+                        ))}
+                    </ListGroup>
+                </Row>
+            }
         </>
     );
 }
