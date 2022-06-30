@@ -1,22 +1,20 @@
 import React from 'react';
+import { ListGroup, ListGroupItem } from 'react-bootstrap';
 
 function Navigation({sectionSelected, setSectionSelected}) {
     return (
         <nav>
-            <ul className="flex-row">
-                <li className="mx-2">
+            <ListGroup horizontal className='justify-content-between'>
+                <ListGroupItem className='border-0'>
                     <a href="#about" className={`${sectionSelected === 'about' && 'activeSection'}`} onClick={ () => setSectionSelected('about') }>About Me</a>
-                </li>
-                <li className="mx-2">
+                </ListGroupItem>
+                <ListGroupItem className='border-0'>
                     <a href="#portfolio" className={`${sectionSelected === 'portfolio' && 'activeSection'}`} onClick={ () => setSectionSelected('portfolio') }>Portfolio</a>
-                </li>
-                <li className="mx-2">
-                    <a href="#contact" className={`${sectionSelected === 'contact' && 'activeSection'}`} onClick={ () => setSectionSelected('contact') }>Contact</a>
-                </li>
-                <li className="mx-2">
-                <a href="#resume" className={`${sectionSelected === 'resume' && 'activeSection'}`} onClick={ () => setSectionSelected('resume') }>Resume</a>
-                </li>
-            </ul>
+                </ListGroupItem>
+                <ListGroupItem className='border-0'>
+                    <a href="#resume" className={`${sectionSelected === 'resume' && 'activeSection'}`} onClick={ () => setSectionSelected('resume') }>Resume</a>
+                </ListGroupItem>
+            </ListGroup>
         </nav>
     );
 }
