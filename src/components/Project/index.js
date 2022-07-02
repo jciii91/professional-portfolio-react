@@ -10,7 +10,7 @@ function Project({project, i}) {
     const {name, repo, deployment, description, tech, sampleGuest} = project;
     const projectImgs = [project0, project1, project2, project3, project4];
     return (
-        <Card style={{ width: '30rem' }}>
+        <Card className='m-auto' style={{ width: '30rem' }}>
             <Card.Img variant='top' src={projectImgs[i]} alt='Project Image' />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>

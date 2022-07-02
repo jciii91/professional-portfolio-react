@@ -37,7 +37,7 @@ function Resume() {
             {windowSize > 900 && 
                 <Row className='g-2 m-4 justify-content-center'>
                         {skills.map((skill) => (
-                            <Col xs={3} className='text-center'>
+                            <Col xs={3} className='text-center m-3'>
                                 {skill}
                             </Col>
                         ))}
