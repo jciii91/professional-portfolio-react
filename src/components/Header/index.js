@@ -7,7 +7,7 @@ function Header({sectionSelected, setSectionSelected}) {
         <Row>
             <Col xs={12} md={4} lg={4} xl={4}>
                 <h3 className='text-lg-start text-center'>
-                    <a href='/'>
+                    <a href='/professional-portfolio-react'>
                         John Costello
                     </a>
                 </h3>
