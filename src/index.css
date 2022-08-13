@@ -235,8 +235,7 @@ nav a:hover {
 
 /* LAYOUT */
 .container {
-  width: 90%;
-  max-width: 1400px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -940,6 +939,15 @@ nav a:hover {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
+}
+
+.max-100 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.a-btn {
+  background-color: lightgray;
 }
 
 /* col-sm */

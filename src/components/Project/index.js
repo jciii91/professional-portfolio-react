@@ -9,31 +9,35 @@ function Project({project, i}) {
     const {name, repo, deployment, description, tech, sampleGuest} = project;
     const projectImgs = [project0, project1, project2, project3, project4];
     return (
-        <div className='m-auto' style={{ width: '30rem' }}>
-            <img variant='top' src={projectImgs[i]} alt='Project screenshot' />
+        <div className='m-auto card' style={{ width: '30rem' }}>
             <div>
-                <div>{name}</div>
-                <div>
+                <img className='max-100' src={projectImgs[i]} alt='Project screenshot' />
+            </div>
+            <div>
+                <div className='card-header'>{name}</div>
+                <div className='card-body'>
                     {description}
                 </div>
                 <div>Technologies Used</div>
                 <ul>
                     {tech.map((item) => (
-                        <li className='border-0'>• {item}</li>
+                        <li className='border-0'>{item}</li>
                     ))}
                 </ul>
                 {sampleGuest &&
                 <>
                     <div>Guest Account Credentials</div>
                     <ul>
-                        <li className='border-0'>• Username: {sampleGuest.username}</li>
-                        <li className='border-0'>• Email: {sampleGuest.email}</li>
-                        <li className='border-0'>• Password: {sampleGuest.password}</li>
+                        <li className='border-0'>Username: {sampleGuest.username}</li>
+                        <li className='border-0'>Email: {sampleGuest.email}</li>
+                        <li className='border-0'>Password: {sampleGuest.password}</li>
                     </ul>
                 </>
                 }
-                <button className='mt-3' variant='primary' href={repo} target='_blank'>Repository</button>
-                <button className='mt-3 mx-3' variant='secondary' href={deployment} target='_blank'>Deployment</button>
+                <div className='text-center pb-3'>
+                    <a className='a-btn mt-3 p-2' href={repo} target='_blank' rel='noreferrer'>Repository</a>
+                    <a className='a-btn mt-3 mx-3 p-2' href={deployment} target='_blank' rel='noreferrer'>Deployment</a>
+                </div>
             </div>
         </div>
     );

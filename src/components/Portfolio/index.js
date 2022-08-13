@@ -42,9 +42,9 @@ function Portfolio() {
     ];
 
     return (
-        <div className='g-4'>
+        <div className='flex-row justify-center'>
             {projectObjects.map((project, index) => (
-                <div>
+                <div className='m-5'>
                     <Project 
                         project = {project}
                         key = {project.name}
