@@ -11,11 +11,11 @@ function Portfolio() {
             deployment: 'https://peaceful-falls-53457.herokuapp.com/'
         },
         {
-            name: 'Space Launch',
-            description: 'As space travel enthusiasts we created an application that tracks space launches. The user has two formats of launch selections: date selection, or a list of the next 10 launches.',
-            tech: ['HTML', 'CSS', 'Javascript', 'Materialize', 'jQuery', 'Mapquest API', 'The SpaceDevs API'],
-            repo: 'https://github.com/jciii91/space-launch',
-            deployment: 'https://jciii91.github.io/space-launch/'
+            name: 'MTG Draft Bot',
+            description: 'This website uses MongoDB as its database on the backend, and React as the frontend. Mongoose and GraphQL are employed to handle the models and queries necessary for serving the data required. Users can signup for an account to keep track of their recent drafts, or use the website with no account.',
+            tech: ['Node.js', 'Apollo', 'GraphQL', 'Express', 'React', 'MongoDB'],
+            repo: 'https://github.com/jciii91/MTG-Draft-Bot',
+            deployment: 'https://tcgoutpost.com/'
         },
         {
             name: 'Book Search Engine',
