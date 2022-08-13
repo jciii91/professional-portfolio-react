@@ -1,6 +1,5 @@
 import React from 'react';
 import resume from '../../assets/documents/resume.pdf'
-import { Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 function Resume() {
     const skills = [
@@ -28,31 +27,31 @@ function Resume() {
 
     return (
         <>
-            <Row className='text-center mb-4'>
+            <div className='text-center mb-4'>
                 <a href={resume} style={{ fontSize: '2rem'}}>Click here to download my resume</a>
-            </Row>
-            <Row className='text-center mb-4'>
+            </div>
+            <div className='text-center mb-4'>
                 <h3>Technical Skills</h3>
-            </Row>
+            </div>
             {windowSize > 900 && 
-                <Row className='g-2 m-4 justify-content-center'>
+                <div className='g-2 m-4 justify-content-center'>
                         {skills.map((skill) => (
-                            <Col xs={3} className='text-center m-3'>
+                            <div xs={3} className='text-center m-3'>
                                 {skill}
-                            </Col>
+                            </div>
                         ))}
-                </Row>
+                </div>
             }
             {windowSize <= 900 && 
-                <Row className='m-4 justify-content-center'>
-                    <ListGroup>
+                <div className='m-4 justify-content-center'>
+                    <ul>
                         {skills.map((skill) => (
-                            <ListGroupItem className='text-center'>
+                            <li className='text-center'>
                                 {skill}
-                            </ListGroupItem>
+                            </li>
                         ))}
-                    </ListGroup>
-                </Row>
+                    </ul>
+                </div>
             }
         </>
     );

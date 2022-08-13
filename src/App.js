@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import { Container } from 'react-bootstrap';
 import About from './components/About';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -12,7 +9,7 @@ function App() {
   const [sectionSelected, setSectionSelected] = useState('about');
 
   return (
-    <Container>
+    <div className='container'>
       <div>
         <Header
           sectionSelected = {sectionSelected}
@@ -25,7 +22,7 @@ function App() {
         </main>
         <Footer></Footer>
       </div>
-    </Container>
+    </div>
   );
 }
 

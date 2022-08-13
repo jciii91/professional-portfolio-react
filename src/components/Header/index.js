@@ -1,25 +1,23 @@
 import React from 'react';
 import Navigation from '../Navigation'
-import { Row, Col } from 'react-bootstrap';
 
 function Header({sectionSelected, setSectionSelected}) {
     return (
-        <Row>
-            <Col xs={12} md={4} lg={4} xl={4}>
-                <h3 className='text-lg-start text-center'>
+        <header className='bg-secondary mb-4 py-2 flex-row align-center'>
+            <div className='container flex-row pl-4 col-8 justify-space-between-lg justify-center align-center'>
+                <h3>
                     <a href='/professional-portfolio-react'>
                         John Costello
                     </a>
                 </h3>
-            </Col>
-            <Col xs={12} md={2} lg={2} xl={4}></Col>
-            <Col xs={12} md={6} lg={6} xl={4}>
+            </div>
+            <div className='col-4'>
                 <Navigation
                     sectionSelected = {sectionSelected}
                     setSectionSelected = {setSectionSelected}
                 ></Navigation>
-            </Col>
-        </Row>
+            </div>
+        </header>
     );
 }
 

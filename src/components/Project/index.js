@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, Button, ListGroup, ListGroupItem } from 'react-bootstrap';
 import project0 from "../../assets/img/0.png"
 import project1 from "../../assets/img/1.png"
 import project2 from "../../assets/img/2.png"
@@ -10,33 +9,33 @@ function Project({project, i}) {
     const {name, repo, deployment, description, tech, sampleGuest} = project;
     const projectImgs = [project0, project1, project2, project3, project4];
     return (
-        <Card className='m-auto' style={{ width: '30rem' }}>
-            <Card.Img variant='top' src={projectImgs[i]} alt='Project Image' />
-            <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Text>
+        <div className='m-auto' style={{ width: '30rem' }}>
+            <img variant='top' src={projectImgs[i]} alt='Project screenshot' />
+            <div>
+                <div>{name}</div>
+                <div>
                     {description}
-                </Card.Text>
-                <Card.Title>Technologies Used</Card.Title>
-                <ListGroup>
+                </div>
+                <div>Technologies Used</div>
+                <ul>
                     {tech.map((item) => (
-                        <ListGroupItem className='border-0'>• {item}</ListGroupItem>
+                        <li className='border-0'>• {item}</li>
                     ))}
-                </ListGroup>
+                </ul>
                 {sampleGuest &&
                 <>
-                    <Card.Title>Guest Account Credentials</Card.Title>
-                    <ListGroup>
-                        <ListGroupItem className='border-0'>• Username: {sampleGuest.username}</ListGroupItem>
-                        <ListGroupItem className='border-0'>• Email: {sampleGuest.email}</ListGroupItem>
-                        <ListGroupItem className='border-0'>• Password: {sampleGuest.password}</ListGroupItem>
-                    </ListGroup>
+                    <div>Guest Account Credentials</div>
+                    <ul>
+                        <li className='border-0'>• Username: {sampleGuest.username}</li>
+                        <li className='border-0'>• Email: {sampleGuest.email}</li>
+                        <li className='border-0'>• Password: {sampleGuest.password}</li>
+                    </ul>
                 </>
                 }
-                <Button className='mt-3' variant='primary' href={repo} target='_blank'>Repository</Button>
-                <Button className='mt-3 mx-3' variant='secondary' href={deployment} target='_blank'>Deployment</Button>
-            </Card.Body>
-        </Card>
+                <button className='mt-3' variant='primary' href={repo} target='_blank'>Repository</button>
+                <button className='mt-3 mx-3' variant='secondary' href={deployment} target='_blank'>Deployment</button>
+            </div>
+        </div>
     );
 }
 

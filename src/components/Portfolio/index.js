@@ -1,12 +1,11 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
 import Project from '../Project';
 
 function Portfolio() {
     const projectObjects = [
         {
             name: 'Budget Tracker',
-            description: 'This application is a budget tracker website. It uses IndexedDB for offline functionality, a service worker for interacting with the browser cache, and is also a Progressive Web Application. The website also uses a MongoDB database.',
+            description: 'This application is a budget tracker website. It uses IndexedDB for offline functionality, a service worker for interacting with the bdivser cache, and is also a Progressive Web Application. The website also uses a MongoDB database.',
             tech: ['Node.js','Express','MongoDB','IndexedDB','PWA'],
             repo: 'https://github.com/jciii91/budget-tracker-PWA',
             deployment: 'https://peaceful-falls-53457.herokuapp.com/'
@@ -28,7 +27,7 @@ function Portfolio() {
         },
         {
             name: 'Work Day Scheduler',
-            description: 'A simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.',
+            description: 'A simple calendar application that allows a user to save events for each hour of the day. This app will run in the bdivser and feature dynamically updated HTML and CSS powered by jQuery.',
             tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Moment.js'],
             repo: 'https://github.com/jciii91/workday-scheduler',
             deployment: 'https://jciii91.github.io/workday-scheduler/'
@@ -43,17 +42,17 @@ function Portfolio() {
     ];
 
     return (
-        <Row className='g-4'>
+        <div className='g-4'>
             {projectObjects.map((project, index) => (
-                <Col>
+                <div>
                     <Project 
                         project = {project}
                         key = {project.name}
                         i = {index}
                     ></Project>
-                </Col>
+                </div>
             ))}
-        </Row>
+        </div>
     );
 }
 export default Portfolio;

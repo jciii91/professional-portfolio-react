@@ -1,25 +1,24 @@
 import React from 'react';
-import { ListGroup, ListGroupItem, Row, Col } from 'react-bootstrap';
 
 function Footer() {
     return (
-        <Row className='justify-content-center'>
-            <Col md={6}>
+        <footer className='bg-secondary my-4 py-2 flex-row align-center'>
+            <div className='container flex-row justify-center align-center'>
                 <nav>
-                    <ListGroup horizontal className='justify-content-between'>
-                        <ListGroupItem className='border-0'>
+                    <ul horizontal className='flex-row no-bullets'>
+                        <li className='border-0 px-5'>
                             <a href="https://www.linkedin.com/in/john-costello-iii-0360a486/" target="_blank" rel="noreferrer">LinkedIn</a>
-                        </ListGroupItem>
-                        <ListGroupItem className='border-0'>
+                        </li>
+                        <li className='border-0 px-5'>
                             <a href="https://github.com/jciii91" target="_blank" rel="noreferrer">Github</a>
-                        </ListGroupItem>
-                        <ListGroupItem className='border-0'>
+                        </li>
+                        <li className='border-0 px-5'>
                             <a href="https://stackoverflow.com/users/14711443/john" target="_blank" rel="noreferrer">Stack Overflow</a>
-                        </ListGroupItem>
-                    </ListGroup>
+                        </li>
+                    </ul>
                 </nav>
-            </Col>
-        </Row>
+            </div>
+        </footer>
     );
 }
 
