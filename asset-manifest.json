@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/professional-portfolio-react/static/css/main.2ce9991d.css",
-    "main.js": "/professional-portfolio-react/static/js/main.479fe1d0.js",
+    "main.css": "/professional-portfolio-react/static/css/main.20e2cad4.css",
+    "main.js": "/professional-portfolio-react/static/js/main.e09fbca9.js",
     "static/js/787.e6da46d6.chunk.js": "/professional-portfolio-react/static/js/787.e6da46d6.chunk.js",
+    "static/media/1.png": "/professional-portfolio-react/static/media/1.4aa295360a982f2614a3.png",
     "static/media/2.png": "/professional-portfolio-react/static/media/2.25119c690cbe38627c92.png",
-    "static/media/1.png": "/professional-portfolio-react/static/media/1.d0642735a31ab09b339a.png",
     "static/media/4.png": "/professional-portfolio-react/static/media/4.393011daebe9c90f39bf.png",
-    "static/media/resume.pdf": "/professional-portfolio-react/static/media/resume.15b4dd58ed9976aa4ecc.pdf",
+    "static/media/resume.pdf": "/professional-portfolio-react/static/media/resume.eb20f8e6e0d1f4e8318b.pdf",
     "static/media/0.png": "/professional-portfolio-react/static/media/0.8a9a1921c885a34e1cc7.png",
     "static/media/3.png": "/professional-portfolio-react/static/media/3.2ca23fb19bffe411ae12.png",
     "static/media/profilePhoto.jpg": "/professional-portfolio-react/static/media/profilePhoto.b7fa043cb3161d5df12a.jpg",
     "index.html": "/professional-portfolio-react/index.html",
-    "main.2ce9991d.css.map": "/professional-portfolio-react/static/css/main.2ce9991d.css.map",
-    "main.479fe1d0.js.map": "/professional-portfolio-react/static/js/main.479fe1d0.js.map",
+    "main.20e2cad4.css.map": "/professional-portfolio-react/static/css/main.20e2cad4.css.map",
+    "main.e09fbca9.js.map": "/professional-portfolio-react/static/js/main.e09fbca9.js.map",
     "787.e6da46d6.chunk.js.map": "/professional-portfolio-react/static/js/787.e6da46d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ce9991d.css",
-    "static/js/main.479fe1d0.js"
+    "static/css/main.20e2cad4.css",
+    "static/js/main.e09fbca9.js"
   ]
 }
