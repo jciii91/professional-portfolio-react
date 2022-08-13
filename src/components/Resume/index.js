@@ -28,15 +28,15 @@ function Resume() {
     return (
         <>
             <div className='text-center mb-4'>
-                <a href={resume} style={{ fontSize: '2rem'}}>Click here to download my resume</a>
+                <a className='include-deco' href={resume} style={{ fontSize: '2rem'}}>Click here to download my resume</a>
             </div>
             <div className='text-center mb-4'>
                 <h3>Technical Skills</h3>
             </div>
             {windowSize > 900 && 
-                <div className='g-2 m-4 justify-content-center'>
+                <div className='m-4'>
                         {skills.map((skill) => (
-                            <div xs={3} className='text-center m-3'>
+                            <div className='text-center m-3'>
                                 {skill}
                             </div>
                         ))}
@@ -46,7 +46,7 @@ function Resume() {
                 <div className='m-4 justify-content-center'>
                     <ul>
                         {skills.map((skill) => (
-                            <li className='text-center'>
+                            <li className='no-bullets text-center'>
                                 {skill}
                             </li>
                         ))}

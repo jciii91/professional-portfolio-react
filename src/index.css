@@ -321,6 +321,10 @@ nav a:hover {
   margin: var(--spacing-five);
 }
 
+.m-10 {
+  margin: var(--spacing-ten);
+}
+
 .m-auto {
   margin: auto;
 }
@@ -948,6 +952,10 @@ nav a:hover {
 
 .a-btn {
   background-color: lightgray;
+}
+
+.include-deco {
+  text-decoration: underline;
 }
 
 /* col-sm */
